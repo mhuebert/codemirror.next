@@ -17,7 +17,8 @@ let state = EditorState.create({doc: `<script>
 </script>
 `, extensions: [
   basicSetup,
-  html()
+  html(),
+  EditorView.lineWrapping
 //  linter(esLint(new Linter)),
 //  new StreamSyntax(legacyJS()).extension,
 ]})
